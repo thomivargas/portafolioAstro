@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import gitHub from '../assets/navbar/gitHub.svg'
+import Linkedin from '../assets/navbar/Linkedin.svg'
+---
+
+<header class='flex items-center justify-between'>
+
+    <div>
+    </div>
+
+    <nav class='flex shadow shadow-white py-4 px-8 text-sm uppercase rounded-full tracking-wider gap-10'>
+        <a href='#inicio' class="hover:text-sky-500">Inicio</a>
+        <a href='#contactame' class="hover:text-sky-500">Contactame</a>
+        <a href='#skills' class="hover:text-sky-500">Habilidades</a>
+        <a href='#proyectos' class="hover:text-sky-500">Proyectos</a>
+    </nav>
+    <div class="flex gap-5">
+        <a href='https://github.com/thomivargas' target='_blank'>
+            <Image src={gitHub} width={35} alt="gitHubIcon" />
+        </a>
+        <a href="https://www.linkedin.com/in/thomas-vargas-405576214/" target='_blank'>
+            <Image src={Linkedin} width={35} alt="LinkedinIcon" />
+        </a>
+    </div>
+</header>

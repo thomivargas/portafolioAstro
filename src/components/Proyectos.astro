@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import js from "../assets/skills/js.svg"
+import reactjs from "../assets/skills/reactjs.svg"
+import tailwind from "../assets/skills/tailwind.svg"
+import gitHub from '../assets/navbar/gitHub.svg'
+import enlace from '../assets/enlace.svg'
+import proyecto1 from '../assets/proyectos/proyecto1.jpg'
+---
+<section id="proyectos" class="py-32">
+    <h2 class='text-5xl font-semibold text-center pb-16'>Mis Proyectos</h2>
+    <div class='flex justify-center'>
+        <div class="w-96 dark:bg-zinc-800 shadow-lg rounded-3xl overflow-hidden">
+          <Image src={proyecto1} class='h-72' alt="proyecto 1" />
+          <div class='w-full text-center  px-4'>
+            <h3 class='mt-6 uppercase text-xl font-semibold'>Api Rick and Morty</h3>
+            <p class='mt-4 font-extralight text-zinc-400'>
+              Mi proyecto se centra en el desarrollo de funciones HTTPS que muestra informacion de los personajes y episodios de la serie Rick and Morty. Se pueden buscar personajes, y cuenta con una paginacion.
+            </p>
+            <div class='my-6 flex justify-center gap-4'>
+              <Image src={reactjs} width={40} alt="react" />
+              <Image src={tailwind} width={45} alt="tailwind" />
+              <Image src={js} width={35} alt="javascript" />
+            </div>
+            <div class='flex justify-between my-6 px-6'>
+              <a href="https://roaring-wisp-e375ab.netlify.app/" class='flex items-center gap-2' target='_blank'>
+                <Image src={enlace} alt="enlace"/>
+                <h4 class='underline'>Vista Previa</h4>
+              </a>
+              <a href="https://github.com/thomivargas/Vargas" class='flex items-center gap-2' target='_blank'>
+                <Image src={gitHub} width={20} alt="GitHub"/>
+                <h4 class='underline'>Ver codigo</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+</section>

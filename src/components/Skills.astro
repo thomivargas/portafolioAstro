@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+
+import html from "../assets/skills/html.svg"
+import css from "../assets/skills/css.svg"
+import js from "../assets/skills/js.svg"
+import reactjs from "../assets/skills/reactjs.svg"
+import mongodb from "../assets/skills/mongodb.svg"
+import nodejs from "../assets/skills/nodejs.svg"
+import tailwind from "../assets/skills/tailwind.svg"
+import Redux from "../assets/skills/Redux.svg"
+import nextjs from "../assets/skills/nextjs.svg"
+import ts from "../assets/skills/ts.svg"
+
+import git from "../assets/herramientas/git.svg"
+import vscode from "../assets/herramientas/vscode.svg"
+import postman from "../assets/herramientas/postman.svg"
+
+---
+
+<section id="skills" class="py-32">
+    <h2 class='text-5xl font-semibold text-center pb-16'>Mis Habilidades</h2>
+    <div class='flex flex-wrap justify-center gap-12'>
+        <Image src={html} width={90} alt="html" title='html' />
+        <Image src={css} width={90} alt="css" title='css' />
+        <Image src={js} width={90} alt="javascript" title='javascript' />
+        <Image src={reactjs} width={90} alt="reactjs" title='reactjs' />
+        <Image src={mongodb} width={90} alt="mongodb" title='mongodb' />
+        <Image src={nodejs} width={90} alt="nodejs" title='nodejs' />
+        <Image src={tailwind} width={90} alt="tailwind" title='tailwind' />
+        <Image src={Redux}  width={90} alt="Redux" title='Redux-toolkit' />
+        <Image src={nextjs} width={90} alt="nextjs" title='nextjs' />
+        <Image src={ts} width={90} alt="typescript" title="typescript" />
+    </div>
+    <div class="flex my-20 items-center text-center justify-center">
+        <div class='flex flex-col gap-8 my-4'>
+            <h2 class='text-5xl font-semibold'>Herramientas</h2>
+            <div class="flex gap-12">
+                <Image src={git} width={90} alt="git" title='git' />
+                <Image src={vscode} width={90} alt="vscode" title='vscode' />
+                <Image src={postman} width={90} alt="postman" title='postman' />
+            </div>
+        </div>
+    </div>
+</section>
