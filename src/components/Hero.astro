@@ -2,9 +2,9 @@
 import { Image } from 'astro:assets';
 import hero from '../assets/navbar/hero.svg'
 ---
-<section class="py-2 md:py-44 flex flex-col md:flex-row gap-10 lg:justify-between items-center">
+<section class="py-10 md:py-16 lg:py-44 flex flex-col md:flex-row gap-10 md:justify-around items-center">
     <div>
-        <h1 class="text-2xl md:text-4xl mr-9 font-bold text-right md:text-left">
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl mr-9 font-bold text-center lg:text-left">
             Hola 👋, <br/>
             Mi nombre es <br/>
             <span class="text-sky-500">Thomas Vargas,</span><br/>
@@ -13,6 +13,6 @@ import hero from '../assets/navbar/hero.svg'
         </h1>
     </div>
     <div>
-        <Image src={hero}  class="w-56 md:w-64 lg:w-80 md:mx-16" alt="imagenInico" />
+        <Image src={hero}  class="w-52 md:w-60 xl:w-80 md:mx-16" alt="imagenInico" />
     </div>
 </section>

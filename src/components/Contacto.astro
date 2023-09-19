@@ -4,10 +4,9 @@ import perfil from "../assets/perfilDoc.jpg"
 import gitHub from '../assets/navbar/gitHub.svg'
 import Linkedin from '../assets/navbar/Linkedin.svg'
 ---
-<section id="contactame" class="py-32">
-    <h1 class='text-5xl font-semibold text-center'>Acerca de mi</h1>
-    <hr class="my-10">
-    <div class="flex">
+<section id="contactame" class="py-24 w-full">
+    <h1 class='text-3xl lg:text-5xl font-semibold text-center'>Acerca de mi</h1>
+    <div class="flex flex-col lg:flex-row items-center mt-10 gap-10 lg:gap-0">
         <div class="flex flex-col w-2/3 items-center gap-4">
             <Image src={perfil} width={250} class="rounded-full" alt="perfil"/>
             <h3 class="text-2xl font-semibold">Thomas Vargas</h3>
@@ -31,14 +30,14 @@ import Linkedin from '../assets/navbar/Linkedin.svg'
                 </a>
             </div>
         </div>
-        <div class="px-16">
-            <p class="text-2xl">
+        <div class="px-16 text-center lg:text-xl">
+            <p>
                 Cuento con un año de experiencia estudiando React. Actualmente, estoy estudiando la carrera de Tecnicatura en Desarrollo de Software, donde he estado adquiriendo conocimientos sólidos en programación y desarrollo web.
             </p>
-            <p class="text-2xl mt-10">
+            <p class="mt-3 lg:mt-10">
                 No cuento con experiencia, he invertido tiempo y esfuerzo en proyectos personales y académicos que me han permitido aplicar mis conocimientos en situaciones del mundo real.
             </p>
-            <p class="text-2xl mt-10">
+            <p class="mt-3 lg:mt-10">
                 Estoy emocionado por lo que el futuro me depara en mi carrera como desarrollador frontend. Si tienes un proyecto o una oportunidad donde pueda contribuir o aprender, ¡estaré encantado de formar parte de ello!
             </p>
         </div>
