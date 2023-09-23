@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import js from "../assets/skills/js.svg";
 import reactjs from "../assets/skills/reactjs.svg";
 import tailwind from "../assets/skills/tailwind.svg";
+import Redux from "../assets/skills/Redux.svg"
 import gitHub from "../assets/navbar/gitHub.svg";
 import enlace from "../assets/enlace.svg";
 import proyecto1 from "../assets/proyectos/proyecto1.jpg";
@@ -22,9 +23,9 @@ import proyecto2 from "../assets/proyectos/proyecto2.png";
           Se pueden buscar personajes, y cuenta con una paginacion.
         </p>
         <div class="my-6 flex justify-center gap-4">
-          <Image src={reactjs} width={40} alt="react" />
-          <Image src={tailwind} width={45} alt="tailwind" />
-          <Image src={js} width={35} alt="javascript" />
+          <Image src={reactjs} width={40} alt="react" title="react"/>
+          <Image src={tailwind} width={45} alt="tailwind" title="tailwind"/>
+          <Image src={js} width={35} alt="javascript" title="javascript"/>
         </div>
         <div class="flex justify-between my-6 px-6">
           <a
@@ -55,9 +56,10 @@ import proyecto2 from "../assets/proyectos/proyecto2.png";
           Este proyecto muestra información sobre películas y series de la base de datos de The Movie Database (TMDb). Los usuarios pueden buscar películas, series.
         </p>
         <div class="my-6 flex justify-center gap-4">
-          <Image src={reactjs} width={40} alt="react" />
-          <Image src={tailwind} width={45} alt="tailwind" />
-          <Image src={js} width={35} alt="javascript" />
+          <Image src={reactjs} width={40} alt="react" title="react"/>
+          <Image src={tailwind} width={45} alt="tailwind" title="tailwind"/>
+          <Image src={js} width={35} alt="javascript" title="javascript"/>
+          <Image src={Redux} width={35} alt="redux-toolkit" title="Redux-toolkit"/>
         </div>
         <div class="flex justify-between my-6 px-6">
           <a
